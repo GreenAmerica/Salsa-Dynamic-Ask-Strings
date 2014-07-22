@@ -6,8 +6,11 @@ Salsa Dynamic Ask String Donation Form Email Usage
 1. Please make sure you change the configuration options in dyanmic_ask.js before using this script.
 
 First, set the multipliers for your ask strings.
+
 Second, change the divs to match the id's of the salsa amount divs.
+
 Third, set a default amount as a fialsafe.
+
 Last, set the parameter you want to grab from your url to create the ask string.
 
 Salsa Dynamic Ask String Donation Form Email Usage
