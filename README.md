@@ -20,7 +20,7 @@ Please follow these steps in order to implement the dynamic ask string embed cod
 Copy and paste the code below exactly where you want the dynamic ask amounts to appear in your email
 Example: Can you please make a gift of
 
-<code>
+`
 <? var mrc=null; 
 
 try { 
@@ -39,7 +39,7 @@ var amt6 = Math.round(mrc * 3);
 
 <?='$'+amt1+', $'+amt2+', $'+amt3?> 
 
-</code>
+`
 
 Example: Can you please make a gift of
 
