@@ -1,7 +1,7 @@
 salsa_dynamic_ask_code
 ======================
 
-<strong>Salsa Dynamic Ask String Donation Form Email Usage</strong>
+<strong>Edit the dynamic_ask.js configuration section first!</strong>
 
 1. Please make sure you change the configuration options in dynamic_ask.js before using this script.
 
