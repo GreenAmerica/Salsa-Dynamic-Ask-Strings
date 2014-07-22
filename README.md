@@ -41,6 +41,7 @@ var amt6 = Math.round(mrc * 3);
 ```
 
 Example:
+
 ```
 <a href="https://salsa.wiredforchange.com/o/5994/p/salsa/donation/common/public/?donate_page_KEY=[[donate_page_key]]&hpc=[[most_recent_gift]]">
 
@@ -58,7 +59,6 @@ var amt3 = Math.round(mrc * 1.5);
 var amt4 = Math.round(mrc * 2); 
 var amt5 = Math.round(mrc * 2.5); 
 var amt6 = Math.round(mrc * 3);
-
 ?> 
 
 <?='$'+amt1+', $'+amt2+', $'+amt3?>
