@@ -15,10 +15,9 @@ Last, set the parameter you want to grab from your url to create the ask string.
 
 <strong>Salsa Dynamic Ask String Donation Form Email Usage</strong>
 
-Please follow these steps in order to implement the dynamic ask string embed code in emails.
+Please follow these steps in order to implement the dynamic ask string embed code in an email.
 
-Copy and paste the code below exactly where you want the dynamic ask amounts to appear in your email
-Example: Can you please make a gift of
+Copy and paste the code below exactly where you want the dynamic ask amounts to appear in your email.
 
 ```javascript
 <? var mrc=null; 
@@ -43,8 +42,8 @@ var amt6 = Math.round(mrc * 3);
 
 Example: Can you please make a gift of
 
-<code>
-<a href=” https://salsa.wiredforchange.com/o/5994/p/salsa/donation/common/public/?donate_page_KEY=[[donate_page_key]]&hpc=[[most_recent_gift]]"
+```
+<a href="https://salsa.wiredforchange.com/o/5994/p/salsa/donation/common/public/?donate_page_KEY=[[donate_page_key]]&hpc=[[most_recent_gift]]">
 
 <?
 
@@ -64,6 +63,7 @@ var amt6 = Math.round(mrc * 3);
 
 ?> <?='$'+amt1+', $'+amt2+', $'+amt3?>
 
-</code>
+</a>
 
-This will make your dynamic ask string a hyperlink.
+```
+
