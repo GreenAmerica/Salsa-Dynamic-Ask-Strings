@@ -20,7 +20,21 @@ Please follow these steps in order to implement the dynamic ask string embed cod
 Copy and paste the code below exactly where you want the dynamic ask amounts to appear in your email
 Example: Can you please make a gift of
 
-<? var mrc=null; try { mrc=Supporter.get('most_recent_gift'); } catch(e){ mrc=50; } var amt1 = Math.round(mrc * 0.5); var amt2 = Math.round(mrc * 1); var amt3 = Math.round(mrc * 1.5); var amt4 = Math.round(mrc * 2); var amt5 = Math.round(mrc * 2.5); var amt6 = Math.round(mrc * 3); ?>
+<? var mrc=null; 
+
+try { 
+mrc=Supporter.get('most_recent_gift'); } 
+catch(e){ 
+mrc=50; 
+} 
+
+var amt1 = Math.round(mrc * 0.5); 
+var amt2 = Math.round(mrc * 1); 
+var amt3 = Math.round(mrc * 1.5); 
+var amt4 = Math.round(mrc * 2); 
+var amt5 = Math.round(mrc * 2.5); 
+var amt6 = Math.round(mrc * 3); 
+?>
 
 <?='$'+amt1+', $'+amt2+', $'+amt3?> or any other amount that you can afford?
 
@@ -35,11 +49,23 @@ If you would like to hyperlink your dynamic ask string please do so like this.
 
 Example: Can you please make a gift of
 
-<a href=” https://salsa.wiredforchange.com/o/5994/p/salsa/donation/common/public/?donate_page_KEY=[[donate_page_key]]&hpc=[[most_recent_gift]]"<?
+<a href=” https://salsa.wiredforchange.com/o/5994/p/salsa/donation/common/public/?donate_page_KEY=[[donate_page_key]]&hpc=[[most_recent_gift]]"
 
-var mrc=null; try { mrc=Supporter.get('most_recent_gift'); } catch(e){ mrc=50; }
+<?
 
-var amt1 = Math.round(mrc * 0.5); var amt2 = Math.round(mrc * 1); var amt3 = Math.round(mrc * 1.5); var amt4 = Math.round(mrc * 2); var amt5 = Math.round(mrc * 2.5); var amt6 = Math.round(mrc * 3);
+var mrc=null; 
+try { 
+mrc=Supporter.get('most_recent_gift'); 
+} catch(e){ 
+mrc=50; 
+}
+
+var amt1 = Math.round(mrc * 0.5); 
+var amt2 = Math.round(mrc * 1); 
+var amt3 = Math.round(mrc * 1.5); 
+var amt4 = Math.round(mrc * 2); 
+var amt5 = Math.round(mrc * 2.5); 
+var amt6 = Math.round(mrc * 3);
 
 ?> <?='$'+amt1+', $'+amt2+', $'+amt3?>
 
