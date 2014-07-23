@@ -15,7 +15,7 @@ var default_amount = 25;
 //4. Set URL Parameter
 var urlParameter = 'hpc';
 
-//End COnfiguration Options
+//End Configuration Options
 //Do not touch anything below this line
 
 function getURLParameter(name) {
