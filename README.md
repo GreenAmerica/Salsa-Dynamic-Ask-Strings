@@ -27,7 +27,19 @@ try {
 mrc=Supporter.get('most_recent_gift'); } 
 catch(e){ 
 mrc=50; 
-} 
+}
+
+if (mrc==0) {
+mrc=50;
+}
+
+if(mrc=='') {
+mrc=50;
+}
+
+if (mrc==null) {
+mrc=50;
+}
 
 var amt1 = Math.round(mrc * 0.5); 
 var amt2 = Math.round(mrc * 1); 
