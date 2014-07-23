@@ -20,7 +20,8 @@ Please follow these steps in order to implement the dynamic ask string embed cod
 Copy and paste the code below exactly where you want the dynamic ask amounts to appear in your email.
 
 ```javascript
-<? var mrc=null; 
+<? 
+var mrc=null; 
 
 try { 
 mrc=Supporter.get('most_recent_gift'); } 
