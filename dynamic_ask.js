@@ -4,7 +4,7 @@
 //CDR Fundraising Group - http://www.cdrfg.com
 
 //1. Set multipliers
-var multipliers = [1,1.4,2.1,2.9,7,29,71]; 
+var multipliers = [1,1.42,2.14,2.85,7.14,28.57,71.42]; 
 
 //2. Set amount div ids to target
 var amt = ['amt35', 'amt50', 'amt75', 'amt100', 'amt250', 'amt1000', 'amt2500'];
