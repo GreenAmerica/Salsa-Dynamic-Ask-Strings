@@ -4,10 +4,10 @@
 //CDR Fundraising Group - http://www.cdrfg.com
 
 //1. Set multipliers
-var multipliers = [1,1.5,2,2.5,3,3.5]; 
+var multipliers = [1,1.4,2.1,2.9,7,29,71]; 
 
 //2. Set amount div ids to target
-var amt = ['amt1', 'amt2', 'amt3', 'amt4', 'amt5', 'amt6'];
+var amt = ['amt35', 'amt50', 'amt75', 'amt100', 'amt250', 'amt1000', 'amt2500'];
 
 //3. Set default amount
 var default_amount = 25;
