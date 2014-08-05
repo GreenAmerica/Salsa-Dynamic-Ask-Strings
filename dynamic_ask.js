@@ -1,4 +1,3 @@
-// Begin SalsaScript
 <?
 // This gets passed to Javascript, and will contain null or an object.
 //
@@ -28,9 +27,7 @@ if (supporterKey != null) {
 	}
 }
 ?>
-//End SalsaScript
 
-//Begin Dynamic Ask String Code
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script type="text/javascript">
        
@@ -71,4 +68,3 @@ for (var i = 0; i < multipliers.length; i++) {
 }
 		
 </script>
-//End Dynamic Ask String Code
