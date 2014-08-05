@@ -1,6 +1,6 @@
 <?
 // This gets passed to Javascript, and will contain null or an object.
-//
+// Paste in the <head></head> section of your template.
 var mostRecentDonation = null;
 // The supporter key is passed via &key=NUMBER in the URL.
 //
@@ -33,6 +33,7 @@ if (supporterKey != null) {
        
 //Configuration Options
 //CDR Fundraising Group - http://www.cdrfg.com
+//Paste right before the </body> tag
 
 //1. Set multipliers
 var multipliers = [1,1.42,2.14,2.85,7.14,28.57,71.42]; 
