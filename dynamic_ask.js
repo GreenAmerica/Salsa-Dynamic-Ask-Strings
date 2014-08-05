@@ -9,7 +9,7 @@ if (supporterKey != null) {
 	//select * from donation where supporter_KEY=NUMBER order by donation_KEY desc limit 1.
 	//
 	donations = DB.getObjects('donation', {
-		condition: [ new Condition('supporter_KEY', '=', supporterKey)],
+		conditions: [ new Condition('supporter_KEY', '=', supporterKey)],
 		orderBy: [ '-donation_KEY'],
 		limit: 1
 	});
