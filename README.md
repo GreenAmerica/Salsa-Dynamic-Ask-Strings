@@ -2,9 +2,9 @@
 
 There are two parts of the code that are needed to successfully build a dynamic ask string form. The SalsaScript section and the javascript section.
 
-Copy the salsaScript section into your template. I highly recommend placing it right after the head tag starts in your template.
+Copy the SalsaScript section into your template. I highly recommend placing it right after the head tag starts.
 
-Copy the javascript section and place it right before the body tag closes. If you don't have the jQuery library in your template. Please include it. You can use the link below to include jQuery in your template.
+Copy the javascript section and place it right before the body tag closes in your template. If you don't have the jQuery library in your template. Please include it. You can use the link below to include jQuery library in your template.
 
 ```
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
@@ -33,8 +33,6 @@ Set the default amount as a failsafe.
 ```
 var default_amount = 35.00;
 ```
-
-That's it!
 
 <strong>Salsa Dynamic Ask String Donation Form Email Usage</strong>
 
