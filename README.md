@@ -41,5 +41,5 @@ That's it!
 To create a dynamic ask string link in an email, simply create a hyperlink and merge in the supporter's key.
 
 ```
-<a href="https://sandbox.salsalabs.com/o/17797/p/salsa/donation/common/public/?donate_page_KEY=7150&key=[[supporter_key]]">Click here to make a donation to my team.</a>
+<a href="https://sandbox.salsalabs.com/o/17797/p/salsa/donation/common/public/?donate_page_KEY=7150&key=[[supporter_KEY]]">Click here to make a donation to my team.</a>
 ```
