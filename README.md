@@ -1,94 +1,49 @@
 salsa_dynamic_ask_code
 ======================
 
-<strong>Edit the dynamic_ask.js configuration section first!</strong>
+<strong>Salsa Dynamic Ask String Donation Form Setup</strong>
 
-1. Please make sure you change the configuration options in dynamic_ask.js before using this script.
+There are two parts of the code that are needed to successfully build a dynamic ask string form. The SalsaScript section and the javascript section.
 
-First, set the multipliers for your ask strings.
+1. Copy the salsaScript section into your template. I highly recommend placing it right after the <head> tag in your template.
 
-Second, change the divs to match the id's of the salsa amount divs.
+2. Copy the javascript section and place it right before the </body> tag. If you don't have the jQuery library in your template. Please include it. You can use the link below to include jQuery in your template.
 
-Third, set a default amount as a fialsafe.
+```
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+```
 
-Last, set the parameter you want to grab from your url to create the ask string.
+3. Set the multipliers for your ask strings. In the javascript section of the template. The default multiplies are:
+
+```
+var multipliers = [1,1.42,2.14,2.85,7.14,28.57,71.42]; 
+```
+
+4. Set amount div ids to target
+
+```
+var amt_id = ['amt35', 'amt50', 'amt75', 'amt100', 'amt250', 'amt1000', 'amt2500'];
+```
+
+5. Set amount. Do not edit this. Leave as is.
+
+```
+var amount = <?= mostRecentDonation == null ? 'null' : mostRecentDonation.toJSON() ?>;
+```
+
+6. Set the default amount as a failsafe.
+
+```
+var default_amount = 35.00;
+```
+
+That's it!
 
 <strong>Salsa Dynamic Ask String Donation Form Email Usage</strong>
 
-Please follow these steps in order to implement the dynamic ask string embed code in an email.
-
-Copy and paste the code below exactly where you want the dynamic ask amounts to appear in your email.
-
-```javascript
-<? 
-var mrc=null; 
-
-try { 
-mrc=Supporter.get('most_recent_gift'); } 
-catch(e){ 
-mrc=50; 
-}
-
-if (mrc==0) {
-mrc=50;
-}
-
-if(mrc=='') {
-mrc=50;
-}
-
-if (mrc==null) {
-mrc=50;
-}
-
-var amt1 = Math.round(mrc * 0.5); 
-var amt2 = Math.round(mrc * 1); 
-var amt3 = Math.round(mrc * 1.5); 
-var amt4 = Math.round(mrc * 2); 
-var amt5 = Math.round(mrc * 2.5); 
-var amt6 = Math.round(mrc * 3); 
-?>
-
-<?='$'+amt1+', $'+amt2+', $'+amt3?> 
+To create a dynamic ask string link in an email, simply create a hyperlink and merge in the supporter's key.
 
 ```
-
-Example:
-
-```
-<a href="https://salsa.wiredforchange.com/o/5994/p/salsa/donation/common/public/?donate_page_KEY=[[donate_page_key]]&hpc=[[most_recent_gift]]">
-
-<?
-var mrc=null; 
-try { 
-mrc=Supporter.get('most_recent_gift'); 
-} catch(e){ 
-mrc=50; 
-}
-
-if (mrc==0) {
-mrc=50;
-}
-
-if(mrc=='') {
-mrc=50;
-}
-
-if (mrc==null) {
-mrc=50;
-}
-
-var amt1 = Math.round(mrc * 0.5); 
-var amt2 = Math.round(mrc * 1); 
-var amt3 = Math.round(mrc * 1.5); 
-var amt4 = Math.round(mrc * 2); 
-var amt5 = Math.round(mrc * 2.5); 
-var amt6 = Math.round(mrc * 3);
-?> 
-
-<?='$'+amt1+', $'+amt2+', $'+amt3?>
-
-</a>
-
+<a href="https://sandbox.salsalabs.com/o/17797/p/salsa/donation/common/public/?donate_page_KEY=7150&key=[[supporter_key]]">Click here to make a donation to my team.</a>
 ```
 
