@@ -1,13 +1,10 @@
-salsa_dynamic_ask_code
-======================
-
 <strong>Salsa Dynamic Ask String Donation Form Setup</strong>
 
 There are two parts of the code that are needed to successfully build a dynamic ask string form. The SalsaScript section and the javascript section.
 
-Copy the salsaScript section into your template. I highly recommend placing it right after the <head> tag in your template.
+Copy the salsaScript section into your template. I highly recommend placing it right after the head tag starts in your template.
 
-Copy the javascript section and place it right before the </body> tag. If you don't have the jQuery library in your template. Please include it. You can use the link below to include jQuery in your template.
+Copy the javascript section and place it right before the body tag closes. If you don't have the jQuery library in your template. Please include it. You can use the link below to include jQuery in your template.
 
 ```
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
@@ -46,4 +43,3 @@ To create a dynamic ask string link in an email, simply create a hyperlink and m
 ```
 <a href="https://sandbox.salsalabs.com/o/17797/p/salsa/donation/common/public/?donate_page_KEY=7150&key=[[supporter_key]]">Click here to make a donation to my team.</a>
 ```
-
